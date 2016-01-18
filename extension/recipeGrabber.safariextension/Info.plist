@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Author</key>
+	<string>Parker Sligting</string>
+	<key>Builder Version</key>
+	<string>11601.1.56</string>
+	<key>CFBundleDisplayName</key>
+	<string>recipeGrabber</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.yourcompany.recipegrabber</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>Chrome</key>
+	<dict>
+		<key>Database Quota</key>
+		<integer>0</integer>
+		<key>Global Page</key>
+		<string>testing.html</string>
+		<key>Toolbar Items</key>
+		<array>
+			<dict>
+				<key>Command</key>
+				<string>grab-recipe</string>
+				<key>Identifier</key>
+				<string>parker</string>
+				<key>Image</key>
+				<string>icon.png</string>
+				<key>Include By Default</key>
+				<true/>
+				<key>Label</key>
+				<string>testing</string>
+				<key>Palette Label</key>
+				<string>testing</string>
+				<key>Tool Tip</key>
+				<string>click here</string>
+			</dict>
+		</array>
+	</dict>
+	<key>Content</key>
+	<dict>
+		<key>Scripts</key>
+		<dict>
+			<key>End</key>
+			<array>
+				<string>testing.js</string>
+			</array>
+			<key>Start</key>
+			<array>
+				<string>jquery-1.11.3.js</string>
+			</array>
+		</dict>
+	</dict>
+	<key>Description</key>
+	<string>grabs recipe from current site</string>
+	<key>DeveloperIdentifier</key>
+	<string>0000000000</string>
+	<key>ExtensionInfoDictionaryVersion</key>
+	<string>1.0</string>
+	<key>Permissions</key>
+	<dict>
+		<key>Website Access</key>
+		<dict>
+			<key>Include Secure Pages</key>
+			<true/>
+			<key>Level</key>
+			<string>All</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

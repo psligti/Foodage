@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="foodage" ng-controller="headerMenu">
+  <head>
+    <meta charset="utf-8">
+    <title>{{mainTitle}}
+    </title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='lib/fullcalendar-2.4.0/fullcalendar.css' />
+    <script src="lib/jquery-1.11.3.js"></script>
+    <script src="lib/jquery/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/sortables.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
+    <script type="text/javascript" src="lib/fullcalendar-2.4.0/moment.js"></script>
+    <script type="text/javascript" src="lib/fullcalendar-2.4.0/fullcalendar.js"></script>
+    <style>
+      /* 1st level */
+      .nav label {
+      	color: blue;
+      }
+      /* 2nd level */
+      .tree > li > a {
+        padding:10px 15px;
+      }
+
+      /* 3rd level */
+      .tree > li > ul > li > a {
+        color:#cc0000;
+        font-size:10pt;
+        margin-left:15px;
+      }
+    </style>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/fa/css/font-awesome.css">
+    <link rel="stylesheet" href="lib/fullcalendar-2.4.0/fullcalendar.css">
+  </head>
+  <body>
+    <h1 class="page-header">Foodage</h1>
+    <div class="col-sm-2 col-md-2 col-lg-2 sidebar">
+      <div ng-include="'mvc/view/header.html'"></div>
+    </div>
+    <div ng-view class='col-lg-9'></div>
+  </body>
+</html>

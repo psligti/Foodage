@@ -1,0 +1,14 @@
+<script>
+// Set up the Listener
+
+safari.application.addEventListener("command", performCommand, false);
+// Function to perform when event is received
+function performCommand(event) {
+    // Make sure event comes from the button
+    if (event.command == "grab-recipe") {
+      console.log('hit')
+      safari.application.activeBrowserWindow.activeTab.page.dispatchMessage("grabIt", "data")
+    }
+}
+</script>
+<div>this</div>

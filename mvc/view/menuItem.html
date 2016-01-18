@@ -1,0 +1,10 @@
+<ul class="nav nav-list">
+  <li ng-repeat="item in menuItems">
+    <a class="tree-toggle nav-header tree" href=""><i class="fa {{item.icon}}"></i> {{item.name}}</a>
+    <ul class="nav" style="display: none;">
+      <a href="{{subitem.route}}" ng-repeat="subitem in item.subitems">
+        <li >{{subitem.name}} </li>
+      </a>
+    </ul>
+  </li>
+</ul>

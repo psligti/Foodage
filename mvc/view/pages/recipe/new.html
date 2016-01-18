@@ -1,0 +1,8 @@
+<h1>New Recipes</h1>
+<div ng-controller="recipeGrabber">
+<form ng-submit='grab()'>
+<input ng-model='recipeUrl' type="text"><button>Grab</button>
+</form>
+<form-input></form-input>
+<pre id="default-spacing">{{recipe | json:5 }}</pre>
+<div>
